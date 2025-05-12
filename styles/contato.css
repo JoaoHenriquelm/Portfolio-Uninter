@@ -1,0 +1,77 @@
+/* Utilizei o flex no form para separar e organizar os elementos input */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Estilização do input do tipo texto e e-mail */
+input[type="text"],
+input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilização do campo de mensagem */
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilização do botão de envio */
+button[type="submit"] {
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+/* Estilização ao passar o mouse no botão */
+button[type="submit"]:hover {
+    background-color: #555;
+    /* Animação ao passar o mouse no botão */
+    transition: background-color 0.3s ease;
+}
+
+/* Estilização da notificação que surgirá quando a mensagem for enviada */
+.notificacao {
+    /* Posição absoluta aos elementos */
+    position: absolute;
+    /* Posicionamento da notificação */
+    top: 20px;
+    right: 20px;
+    background-color: #adadad;
+    color: #f4f4f4;
+    padding: 16px 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    
+    /* Propriedades para animação dessa notificacao */
+    transform: translateY(20px);
+    animation: entrada 0.5s forwards, saida 0.5s 3s forwards;
+  }
+
+  /* Adiciona e organiza o simbolo de confirmação na mensagem */
+  .notificacao::before {
+    content: "✅";
+    margin-right: 8px;
+  }
+
+  /* Animação de entrada e saida do elemento na tela */
+  @keyframes entrada {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes saida {
+    to {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }

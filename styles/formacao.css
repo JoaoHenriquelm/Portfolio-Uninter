@@ -1,0 +1,10 @@
+/* Centralizei a div e limitei o tamanho da div para melhor leitura  */
+main div {
+    margin: auto;
+    max-width: 800px;
+}
+
+/* Utilizei a margin para separar as formações */
+main div ul li {
+    margin: 30px 0;
+}

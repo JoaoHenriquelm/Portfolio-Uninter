@@ -1,0 +1,41 @@
+/* Estilização da div do meu portifólio, para boa diagramação utilizei o grid para organizar os elementos */
+div.grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+}
+
+div.grid h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Utilizei o flex e space-between para os links ficarem alinhados */
+div.grid div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+p.link {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilização do link externo para o github */
+div.grid div a {
+    color: #1a73e8;
+    text-decoration: underline;
+}
+
+/* Estilização para quando o mouse passar pelo link */
+div.grid div a:hover {
+    color: #174ea6;
+    text-decoration: none;
+}
+
+/* Estilização para quando o link já foi visitado */
+div.grid div a:visited {
+    color: #5a4fcf; 
+}

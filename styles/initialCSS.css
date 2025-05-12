@@ -1,0 +1,54 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    /* o border box inclui largura (width), altura (height), preenchimento (padding) e borda (border), mas não a margem (margin). */
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Mudança da cor de fundo do site */
+body {
+    background-color: #f4f4f4;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Estilo da lista de links das páginas do cabeçalho, utilização de flex para centralizar a lista e separar os itens */
+header ul {
+    margin-top: 20px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Estilo dos links do cabeçalho */
+header ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* A cor dos link muda ao passar o mouse em um link */
+header ul li a:hover {
+    color: #ccc;
+}
+
+/* Estilo inicial do conteúdo principal */
+main {
+    padding: 20px;
+    font-size: 20px;
+}
+
+/* Estilo do título do conteúdo principal */
+main h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 28px;
+}

@@ -1,0 +1,8 @@
+/* Estilo para a div que guarda as informações do sobre mim, utilizei o flex para uma melhor separação entre os elementos e limitei o tamanho da div para melhor leitura  */
+main div {
+    margin: auto;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
