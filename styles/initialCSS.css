@@ -2,9 +2,10 @@
 * {
     margin: 0;
     padding: 0;
-    /* o border box inclui largura (width), altura (height), preenchimento (padding) e borda (border), mas não a margem (margin). */
+    /* o border box inclui largura (width), altura (height), preenchimento (padding) e borda (border). Isso faz com que todo contéudo da div seja exatamente do tamanho colocado */
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+    line-height: 1.8;
 }
 
 /* Mudança da cor de fundo do site */

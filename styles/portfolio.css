@@ -39,3 +39,11 @@ div.grid div a:hover {
 div.grid div a:visited {
     color: #5a4fcf; 
 }
+
+/* Media query para quando o tamanho da tela chegar a 800 mudar o grid para um display flex em coluna */
+@media screen and (max-width: 800px) {
+    div.grid {
+        display: flex;
+        flex-direction: column;
+    }
+}
