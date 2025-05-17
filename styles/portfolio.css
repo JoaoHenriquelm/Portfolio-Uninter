@@ -10,12 +10,18 @@ div.grid h3 {
     margin-bottom: 10px;
 }
 
-/* Utilizei o flex e space-between para os links ficarem alinhados */
+/* Utilizei essas duas divs para alinhar o conteúdo */
 div.grid div {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
+div.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
 
 p.link {
     text-align: center;
